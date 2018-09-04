@@ -1,0 +1,32 @@
+{
+  "name": "create-react-external-component",
+  "version": "1.0.0",
+  "description": "A command to create standalone react components",
+  "main": "index.js",
+  "repository": "https://mayantigo@bitbucket.org/mayantigo/create-react-external-component.git",
+  "author": "mayantigo",
+  "license": "GPL",
+  "private": false,
+  "devDependencies": {
+    "enzyme": "^3.5.1",
+    "eslint": "^5.5.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "mocha": "^5.2.0",
+    "prettier": "^1.14.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "rollup": "^0.65.0"
+  },
+  "tags": [
+    "react",
+    "create",
+    "component",
+    "external"
+  ]
+}
