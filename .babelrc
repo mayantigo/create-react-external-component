@@ -1,14 +1,7 @@
 {
   "presets": [
-    "stage-1",
-    "react",
-    [
-      "latest", {
-      "es2015": {
-        "modules": false
-      }
-    }
-    ]
+    "@babel/preset-env",
+    "@babel/preset-react"
   ],
-  "plugins": ["external-helpers"]
+  "plugins": ["@babel/plugin-external-helpers"]
 }

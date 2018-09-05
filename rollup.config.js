@@ -1,6 +1,7 @@
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
+import replace from 'rollup-plugin-replace';
 
 export default {
   input: 'src/index.js',
@@ -10,13 +11,17 @@ export default {
   },
   external: [
     'react',
-    'react-proptypes'
+    'prop-types',
+    'react-dom'
   ],
   plugins: [
-    resolve(),
-    commonjs(),
     babel({
       exclude: 'node_modules/**'
-    })
+    }),
+    resolve(),
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    commonjs(),
   ]
 }
