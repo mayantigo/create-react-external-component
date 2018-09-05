@@ -39,8 +39,7 @@
     "react",
     "create",
     "component",
-    "external",
-    "avoriscb36"
+    "external"
   ],
   "dependencies": {
     "@storybook/cli": "^3.4.10",
