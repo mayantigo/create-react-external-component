@@ -7,6 +7,9 @@
   "author": "mayantigo",
   "license": "GPL",
   "private": false,
+  "scripts": {
+    "build": "rollup -c"
+  },
   "devDependencies": {
     "enzyme": "^3.5.1",
     "eslint": "^5.5.0",
@@ -21,12 +24,20 @@
     "prettier": "^1.14.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "rollup": "^0.65.0"
+    "rollup": "^0.65.0",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.1.6",
+    "rollup-plugin-node-resolve": "^3.4.0"
   },
   "tags": [
     "react",
     "create",
     "component",
-    "external"
-  ]
+    "external",
+    "avoriscb36"
+  ],
+  "dependencies": {
+    "@storybook/cli": "^3.4.10",
+    "global": "^4.3.2"
+  }
 }
