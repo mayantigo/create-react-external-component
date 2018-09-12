@@ -3,11 +3,12 @@ import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
 import postcss from 'rollup-plugin-postcss';
+import { uglify } from 'rollup-plugin-uglify';
 
 export default {
   input: 'src/index.js',
   output: {
-    file: 'dist/bundle.js',
+    file: 'dist/component.js',
     format: 'cjs'
   },
   external: [
@@ -17,7 +18,8 @@ export default {
   ],
   plugins: [
     postcss({
-      plugins: []
+      extract: true,
+      minimize: true,
     }),
     babel({
       exclude: 'node_modules/**'
@@ -27,5 +29,6 @@ export default {
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
     commonjs(),
+    uglify(),
   ]
 }
