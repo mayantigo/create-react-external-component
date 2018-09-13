@@ -29,6 +29,7 @@
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.11.1",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^23.6.0",
     "prettier": "^1.14.2",
     "prop-types": "^15.6.2",
@@ -52,5 +53,11 @@
   "dependencies": {
     "@storybook/cli": "^3.4.10",
     "global": "^4.3.2"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   }
 }

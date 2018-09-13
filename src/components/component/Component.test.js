@@ -6,7 +6,7 @@ Enzyme.configure({adapter: new Adapter()});
 
 import Component from './Component';
 
-it('CheckboxWithLabel changes the text after click', () => {
+it('Simple ok test', () => {
   const component = shallow(<Component title="Ey" />);
   expect(component.text()).toContain('Ey');
 });
