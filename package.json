@@ -9,7 +9,8 @@
   "private": false,
   "scripts": {
     "build": "rollup -c",
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint"
   },
   "devDependencies": {
     "@babel/core": "^7.0.1",
@@ -22,6 +23,7 @@
     "enzyme": "^3.5.1",
     "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.0.1",
     "eslint-config-react-app": "^2.1.0",
     "eslint-loader": "^2.1.0",

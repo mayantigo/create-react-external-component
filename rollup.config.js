@@ -9,12 +9,12 @@ export default {
   input: 'src/index.js',
   output: {
     file: 'dist/component.js',
-    format: 'cjs'
+    format: 'cjs',
   },
   external: [
     'react',
     'prop-types',
-    'react-dom'
+    'react-dom',
   ],
   plugins: [
     postcss({
@@ -22,13 +22,15 @@ export default {
       minimize: true,
     }),
     babel({
-      exclude: 'node_modules/**'
+      exclude: 'node_modules/**',
     }),
-    resolve(),
+    resolve({
+      extensions: ['.mjs', '.js', '.jsx', '.json'],
+    }),
     replace({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production'),
     }),
     commonjs(),
     uglify(),
-  ]
-}
+  ],
+};
