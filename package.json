@@ -1,7 +1,7 @@
 {
   "name": "create-react-external-component",
   "version": "1.0.0",
-  "description": "A command to create standalone react components",
+  "description": "Boilerplate for external react libraries",
   "main": "index.js",
   "repository": "https://mayantigo@bitbucket.org/mayantigo/create-react-external-component.git",
   "author": "mayantigo",
