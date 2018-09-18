@@ -63,7 +63,6 @@
     "external"
   ],
   "dependencies": {
-    "@storybook/cli": "^3.4.10",
     "global": "^4.3.2"
   },
   "jest": {
