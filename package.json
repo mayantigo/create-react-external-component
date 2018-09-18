@@ -9,8 +9,8 @@
   "private": false,
   "scripts": {
     "build": "rollup -c",
+    "pretest": "eslint ./src/**/*.js ./src/**/*.jsx & stylelint ./src/components/**/**.css ./src/pages/**/**.css",
     "test": "jest",
-    "lint": "eslint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
